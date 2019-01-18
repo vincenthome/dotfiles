@@ -4,7 +4,7 @@
 
 ### Install
 
-Download the file [`gitalias.txt`](gitalias.txt):
+Download the file [`.gitalias.txt`](.gitalias.txt):
 
   * Save this file as a dot file in your home directory: `~/.gitalias.txt`
 
@@ -16,5 +16,5 @@ Example file `~/.gitconfg` with an entry to include the file `~/.gitalias.txt`:
 
 ```gitalias
 [include]
-  path = gitalias.txt
+  path = .gitalias.txt
 ```
