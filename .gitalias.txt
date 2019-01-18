@@ -1,0 +1,101 @@
+[alias]
+
+  ##
+  # One letter alias for our most frequent commands.
+  #
+  # Guidelines: these aliases do not use options, because we want
+  # these aliases to be easy to compose and use in many ways.
+  ##
+
+  a = add
+  b = branch
+  c = commit
+  d = diff
+  f = fetch
+  g = grep
+  l = log
+  m = merge
+  o = checkout
+  p = pull
+  r = remote
+  s = status
+  w = whatchanged
+  
+  ### diff ###
+
+  # diff - show changes not yet staged
+  dc = diff --cached
+
+  # diff - changes about to be commited
+  ds = diff --staged
+
+  # diff - show changes but by word, not line
+  dw = diff --word-diff
+
+  ### log ###
+
+  # log with a text-based graphical representation of the commit history.
+  lg = log --graph
+
+  # log with one line per item.
+  lo = log --oneline
+
+  # log with patch generation.
+  lp = log --patch
+
+  # log with items appearing in topological order, i.e. descendant commits are shown before their parents.
+  lt = log --topo-order
+
+  # log key - our favorite way to show our key performance indicators, i.e. our most useful summary.
+  lk = log --graph --topo-order --abbrev-commit --date=short --decorate --all --boundary --pretty=format:'%Cgreen%ad %Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%cn]%Creset %Cblue%G?%Creset'
+
+  # log latest - show the 10 most recent lines using `lk`
+  ll = log -n 10 --graph --topo-order --abbrev-commit --date=short --decorate --all --boundary --pretty=format:'%Cgreen%ad'
+
+  ### status ###
+
+  # status with short format instead of full details
+  ss = status --short
+
+  # status with short format and showing branch and tracking info.
+  ssb = status --short --branch
+
+  # Diffs
+  diff-all = !"for name in $(git diff --name-only $1); do git difftool $1 $name & done"
+  diff-changes = diff --name-status -r
+  diff-stat = diff --stat --ignore-space-change -r
+  diff-staged = diff --cached
+
+  ##
+  # Reset & Undo
+  ##
+
+  # Reset and undo aliases are ways to move backwards on the commit chain.
+  # We find that novices prefer the wording "undo"; experts prefer "reset".
+  reset-commit       = reset --soft HEAD~1
+  reset-commit-hard  = reset --hard HEAD~1
+  reset-commit-clean = !git reset --hard HEAD~1 && git clean -fd
+  reset-to-pristine   = !git reset --hard && git clean -ffdx
+  reset-to-upstream  = !git reset --hard $(git upstream-name)
+
+  # Undo is simply a synonym for "reset" because "undo" can help novices.
+  undo-commit        = reset --soft HEAD~1
+  undo-commit-hard   = reset --hard HEAD~1
+  undo-commit-clean  = !git reset --hard HEAD~1 && git clean -fd
+  undo-to-pristine   = !git reset --hard && git clean -ffdx
+  undo-to-upstream   = !git reset --hard $(git upstream-name)
+
+  # Nicknames
+  uncommit = reset --soft HEAD~1
+  unadd = reset HEAD
+  unstage = reset HEAD
+
+  # Discard changes in a (list of) file(s) in working tree
+  discard = checkout --
+
+  # Friendly wording is easier to remember.
+  # Thanks to http://gggritso.com/human-git-aliases
+  branches = branch -a
+  tags = tag -n1 --list
+  stashes = stash list
+  
