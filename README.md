@@ -18,3 +18,11 @@
    [include]
      path = .gitalias.txt
    ```
+
+## tmux
+
+ - [cheatsheet](https://gist.github.com/henrik/1967800)
+ - [guide](https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340)
+ 
+ 
+ 
