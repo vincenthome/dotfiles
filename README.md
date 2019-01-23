@@ -26,7 +26,7 @@
    - paste: `prefix ]`
  
  - cheatsheet
-   - [tmux-cheatsheet.md](tmux-cheatsheet.md)
+   - Mine: [tmux-cheatsheet.md](tmux-cheatsheet.md)
    - [tmuxcheatsheet.com](https://tmuxcheatsheet.com)
   
  - [guide](https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340)
