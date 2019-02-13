@@ -22,7 +22,7 @@
 ## tmux
 
  - hotkeys
-   - paste from Windows: `shift + [left mouse click]`
+   - paste from Windows: `shift + [right mouse click]`
    - paste: `prefix ]`
  
  - cheatsheet
