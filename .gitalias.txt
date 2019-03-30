@@ -1,3 +1,10 @@
+## Install global config for Windows: 
+# edit the file C:\Users\[username]\.gitconfig
+# add the following 2 lines:
+# [include]
+#	    path = .gitalias.txt
+
+
 [alias]
 
   ##
