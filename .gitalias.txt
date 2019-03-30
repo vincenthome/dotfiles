@@ -5,6 +5,16 @@
 #	    path = .gitalias.txt
 
 
+## Install global config for Mac
+# edit the file ~/.gitconfig
+# add the following 2 lines:
+# [include]
+#	    path = .gitalias.txt
+
+# to avoid an extra file .gitalias.txt
+# you can also paste the following [alias] inline to .gitconfig
+
+
 [alias]
 
   ##
