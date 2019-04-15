@@ -21,7 +21,7 @@
 
 ## tmux
 
- - hotkeys
+ - <mark>hotkeys</mark>
    - paste from Windows: `shift + [right mouse click]`
    - paste: `prefix ]`
  
