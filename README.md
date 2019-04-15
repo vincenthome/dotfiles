@@ -19,9 +19,9 @@
      path = .gitalias.txt
    ```
 
-## tmux
+## tmux for Windows
 
- - <mark>hotkeys</mark>
+ - hotkeys
    - paste from Windows: `shift + [right mouse click]`
    - paste: `prefix ]`
  
