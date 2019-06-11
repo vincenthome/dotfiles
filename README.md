@@ -1,6 +1,6 @@
 # dotfiles
 
-## git-alias
+## .git-alias
 
  - Install
 
