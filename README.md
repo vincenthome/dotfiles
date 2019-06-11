@@ -18,6 +18,9 @@
    [include]
      path = .gitalias.txt
    ```
+ - cheatsheet
+   - Mine: [git-cheatsheet.md](git-cheatsheet.md)
+
 
 ## tmux for Windows
 
