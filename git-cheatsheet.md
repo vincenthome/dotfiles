@@ -5,7 +5,7 @@ p.s. Head can always be replace with CommitHashId
 Info: status ; branch [-a] ; log [--oneline --graph] ; tag
 Stage: add {fname} / . 
 Commit: commit ; commit –m “my comment”
-CommitAppend: commit --amend -m "my comment"
+  Replace last comment: commit --amend -m "my comment"
 Checkout: checkout chash/bname (Moves HEAD) 
 UnStage: reset {fnames}  /  reset (all)
 UnCommit Move HEAD back: 
