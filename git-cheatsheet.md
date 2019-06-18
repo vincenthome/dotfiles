@@ -8,10 +8,10 @@ Commit: commit ; commit –m “my comment”
   Replace last comment: commit --amend -m "my comment"
 Checkout: checkout chash/bname (Moves HEAD) 
 UnStage: reset {fnames}  /  reset (all)
-UnCommit Move HEAD back: 
-  Last commit destroy un/stage: reset --hard head~1
-  Last commit no destroy stage: reset --soft head~1
-  Last commit no destroy unstage: reset head~1
+UnCommit Move HEAD back to last commit: 
+  @ Stage: reset --soft head~1
+  @ Unstage: reset head~1
+  Destroy un/stage: reset --hard head~1
 Rollback(Rewrite History) reset --hard {to-keep-hash}
 Rollback Merge: 
 a. git log to identify the keep-branch-position (kbp)
