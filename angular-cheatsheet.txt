@@ -1,0 +1,53 @@
+todo
+
+Angular CLI: ng
+new {name} -st skip-tests -p {my} prefix --style scss --routing -d dry-run
+serve -o -p 4201
+g (generate): m(module) s(service) d(directive) p(pipe) cl(class) i(interface) e(enum)
+Module: g m {path\mname} [--routing] [-d]
+Component: g c {path\cname} [-m {path\mname}] [--flat] [-d]
+Service: g s {path\sname} [-m {path\mname}] [-d] [--flat false]
+Class: g class {path\cname}
+Options: -p {my} prefix -it inline-template -is inline-style --flat  
+.angular-cli.json:
+   "defaults": { "serve": { "port": 4201 } }
+VSC extensions: google  link link 
+Receip: https://github.com/Microsoft/vscode-recipes 
+Flex-layout: https://github.com/angular/flex-layout 
+
+Angular Material: Ref1, Ref2, Ref3, Ref4, 
+npm install --save @angular/material @angular/cdk
+npm install --save @angular/animations
+styles.scss: @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+Index.html: <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatInputModule,MatButtonModule} from '@angular/material';
+ imports: [ ... BrowserAnimationsModule,MatInputModule,MatButtonModule, … ],
+
+
+Angular Bootstrap
+npm install --save @ng-bootstrap/ng-bootstrap
+Index.html: <link … href=".../bootstrap/4.1.1/css/bootstrap.min.css" ...>
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+imports: [ ... NgbModule.forRoot(), ...  ]
+navbar: https://getbootstrap.com/docs/4.0/components/navbar/#color-schemes
+.router-link-active { color: cyan!important; }
+
+
+scss
+Import scss: @import ‘filename-w/o-extension’;
+var: $my-var: my-values;
+function(aka Mixins): 
+  Declare: @mixin foo($p1) { height: $p1; … }
+  Call:  .my-class { @include foo(10px); } 
+Inheritance: 
+  Declare: %my-base-style { … } 
+  Use: .my-derived-style { @extend %my-base-style; width: 2px; }
+Selector hierarchy: 
+  nav {
+    a {
+      text-decoration: none;
+    }
+  }
+Math Operator(+-*/%): .my { width: 10px * 2%; }
+
