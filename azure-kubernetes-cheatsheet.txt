@@ -1,1 +1,7 @@
 todo
+
+AKS:
+
+ACR:
+
+Sample for MSSQL, MYSQL, NGINX, MONGODB etc...
